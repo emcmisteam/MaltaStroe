@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    123
+    
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")

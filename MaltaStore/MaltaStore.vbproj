@@ -157,6 +157,7 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\AuthController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +186,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\css.css" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -194,6 +196,15 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="Content\bootstrap-responsive_min.css" />
+    <Content Include="Content\bootstrap_min.css" />
+    <Content Include="Content\default.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\img\g-favicon.png" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\style-metro.css" />
+    <Content Include="Content\style-responsive.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -248,11 +259,26 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\uniform.default.css" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap_min.js" />
+    <Content Include="Scripts\excanvas.js" />
+    <Content Include="Scripts\jquery-1.10.1_min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1_min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.1.custom_min.js" />
+    <Content Include="Scripts\jquery.blockui_min.js" />
+    <Content Include="Scripts\jquery.cookie_min.js" />
+    <Content Include="Scripts\jquery.slimscroll_min.js" />
+    <Content Include="Scripts\jquery.uniform_min.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Views\Auth\Login.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.10.1.min.map" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -262,7 +288,7 @@
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate_min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
@@ -283,7 +309,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
