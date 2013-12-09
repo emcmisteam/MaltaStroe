@@ -1,4 +1,4 @@
-var Login = function () {
+﻿var Login = function () {
     
     return {
         //main function to initiate the module
@@ -9,7 +9,7 @@ var Login = function () {
 	            errorClass: 'help-inline', // default input error message class
 	            focusInvalid: false, // do not focus the last invalid input
 	            rules: {
-	                username: {
+	                email: {
 	                    required: true
 	                },
 	                password: {
@@ -21,11 +21,11 @@ var Login = function () {
 	            },
 
 	            messages: {
-	                username: {
-	                    required: "Username is required."
+	                email: {
+	                    required: "請輸入電子郵件帳號"
 	                },
 	                password: {
-	                    required: "Password is required."
+	                    required: "請輸入密碼"
 	                }
 	            },
 
@@ -47,12 +47,30 @@ var Login = function () {
 	                error.addClass('help-small no-left-padding').insertAfter(element.closest('.input-icon'));
 	            },
 
+	            
 	            submitHandler: function (form) {
 	                window.location.href = "index.html";
+                    /*
+	                var email = $('input[name="email"]').val(),
+                         pass = $('input[name="password"]').val();
+	                if (email && pass) {
+	                    $('.content').hide();
+	                    $('#laoding').modal({
+	                        backdrop: 'static',
+	                        keyboard: true
+	                    });
+	                    setTimeout(function () {
+	                        form.submit();
+	                    }, 10000);
+	                    //return true;
+	                } else {
+	                    return false;
+	                }
+                    */
 	            }
 	        });
 
-	        $('.login-form input').keypress(function (e) {
+           $('.login-form input').keypress(function (e) {
 	            if (e.which == 13) {
 	                if ($('.login-form').validate().form()) {
 	                    window.location.href = "index.html";
@@ -127,7 +145,7 @@ var Login = function () {
 	            focusInvalid: false, // do not focus the last invalid input
 	            ignore: "",
 	            rules: {
-	                username: {
+	                email: {
 	                    required: true
 	                },
 	                password: {
