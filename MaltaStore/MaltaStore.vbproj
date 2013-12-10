@@ -158,6 +158,7 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\AuthController.vb" />
+    <Compile Include="Controllers\DashboardController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -461,6 +462,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Views\Auth\Login.vbhtml" />
     <Content Include="Views\Auth\Index.vbhtml" />
+    <Content Include="Views\Dashboard\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

@@ -28,7 +28,7 @@ End Code
     <script>
         $(document).ready(function () {
             setTimeout(function () {
-                window.location.href = "Login";
+                window.location.href = "http://localhost";
             }, 10000);
         });
     </script>
