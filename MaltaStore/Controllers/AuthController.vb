@@ -1,6 +1,14 @@
 ﻿Public Class AuthController
     Inherits System.Web.Mvc.Controller
 
+
+    '
+    ' GET: /Index
+
+    Function Index() As ActionResult
+        Return View()
+    End Function
+
     '
     ' GET: /Auth
 

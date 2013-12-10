@@ -383,7 +383,9 @@
     <Content Include="Content\image\xing.png" />
     <Content Include="Content\image\yahoo.png" />
     <Content Include="Content\image\youtube.png" />
+    <Content Include="Content\loading_android.css" />
     <Content Include="Content\login.css" />
+    <Content Include="Content\normalize.css" />
     <Content Include="Content\style-metro.css" />
     <Content Include="Content\style-responsive.css" />
     <Content Include="Content\style.css" />
@@ -458,6 +460,7 @@
     <Content Include="Scripts\prefixfree.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Views\Auth\Login.vbhtml" />
+    <Content Include="Views\Auth\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

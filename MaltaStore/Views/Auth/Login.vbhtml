@@ -15,7 +15,7 @@ End Code
     <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/login")
+    @Styles.Render("~/Content/loginCss")
     @Scripts.Render("~/bundles/core")
     @Scripts.Render("~/bundles/login")
     <!--[if lt IE 9]>
@@ -86,15 +86,83 @@ End Code
 
 
         <!-- BEGIN FORGOT PASSWORD FORM -->
+        <form class="form-vertical forget-form" action="index.html">
+			<h3 class="">忘記密碼 ?</h3>
+			<p>請輸入您所註冊的電子郵件信箱,<br>系統將重新發送新密碼至此信箱中</p>
+			<div class="control-group">
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-envelope"></i>
+						<input class="m-wrap placeholder-no-fix" type="text" placeholder="Email" name="email" />
+					</div>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button type="button" id="back-btn" class="btn">
+				<i class="m-icon-swapleft"></i> Back
+				</button>
+				<button type="submit" class="btn green pull-right">
+				Submit <i class="m-icon-swapright m-icon-white"></i>
+				</button>           
+			</div>
+		</form>
         <!-- END FORGOT PASSWORD FORM -->
 
         
         <!-- BEGIN REGISTRATION FORM -->
+		<form class="form-vertical register-form" action="index.html">
+			<h3 class="">註冊</h3>
+			<p>請填寫註冊資訊:</p>
+			<div class="control-group">
+				<label class="control-label visible-ie8 visible-ie9">使用者名稱</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-user"></i>
+						<input class="m-wrap placeholder-no-fix" type="text" placeholder="使用者名稱" name="username"/>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label visible-ie8 visible-ie9">密碼</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-lock"></i>
+						<input class="m-wrap placeholder-no-fix" type="password" id="register_password" placeholder="密碼" name="password"/>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label visible-ie8 visible-ie9">密碼確認</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-ok"></i>
+						<input class="m-wrap placeholder-no-fix" type="password" placeholder="密碼確認" name="rpassword"/>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+				<label class="control-label visible-ie8 visible-ie9">電子郵件</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-envelope"></i>
+						<input class="m-wrap placeholder-no-fix" type="text" placeholder="電子郵件" name="email"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button id="register-back-btn" type="button" class="btn">
+				<i class="m-icon-swapleft"></i>  Back
+				</button>
+				<button type="submit" id="register-submit-btn" class="btn green pull-right">
+				Sign Up <i class="m-icon-swapright m-icon-white"></i>
+				</button>            
+			</div>
+		</form>
         <!-- END REGISTRATION FORM -->
 
 
        <!---------------------------------------------------------------------------------------------------------------------------> 
-      
 	 
   </div>
   <!-- END LOGIN -->

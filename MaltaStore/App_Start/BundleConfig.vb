@@ -20,7 +20,9 @@ Public Class BundleConfig
         bundles.Add(New ScriptBundle("~/bundles/login").Include(
                    "~/Scripts/jquery.validate_min.js",
                    "~/Scripts/app.js",
-                   "~/Scripts/login.js"))
+                   "~/Scripts/login.js",
+                   "~/Scripts/prefixfree.min.js",
+                   "~/Scripts/modernizr.js"))
 
         ' GLOBAL STYLE CSS
         bundles.Add(New StyleBundle("~/Content/css").Include(
@@ -34,7 +36,9 @@ Public Class BundleConfig
                     "~/Content/uniform.default.css"))
 
         ' PAGE LEVEL STYLE CSS
-        bundles.Add(New StyleBundle("~/Content/login").Include("~/Content/login.css"))
+        bundles.Add(New StyleBundle("~/Content/loginCss").Include(
+                    "~/Content/normalize.css",
+                    "~/Content/login.css"))
 
 
         'bundles.Add(New ScriptBundle("~/bundles/jquery").Include(

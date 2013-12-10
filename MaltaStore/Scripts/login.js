@@ -10,10 +10,12 @@
 	            focusInvalid: false, // do not focus the last invalid input
 	            rules: {
 	                email: {
-	                    required: true
+	                    required: true,
+	                    email: true
 	                },
 	                password: {
-	                    required: true
+	                    required: true,
+	                    minlength: 6
 	                },
 	                remember: {
 	                    required: false
@@ -22,10 +24,12 @@
 
 	            messages: {
 	                email: {
-	                    required: "請輸入電子郵件帳號"
+	                    required: "請輸入電子郵件帳號",
+	                    email: "請輸入正確電子郵件格式 (例如：EX@gmail.com)"
 	                },
 	                password: {
-	                    required: "請輸入密碼"
+	                    required: "請輸入密碼(6~10碼)",
+	                    minlength:"最少輸入6碼"
 	                }
 	            },
 
@@ -49,7 +53,7 @@
 
 	            
 	            submitHandler: function (form) {
-	                window.location.href = "index.html";
+	                window.location.href = "Auth/index";
                     /*
 	                var email = $('input[name="email"]').val(),
                          pass = $('input[name="password"]').val();
@@ -73,7 +77,7 @@
            $('.login-form input').keypress(function (e) {
 	            if (e.which == 13) {
 	                if ($('.login-form').validate().form()) {
-	                    window.location.href = "index.html";
+	                    window.location.href = "Auth/index";
 	                }
 	                return false;
 	            }
@@ -93,7 +97,8 @@
 
 	            messages: {
 	                email: {
-	                    required: "Email is required."
+	                    required: "請輸入電子郵件帳號",
+	                    email: "請輸入正確電子郵件格式 (例如：EX@gmail.com)"
 	                }
 	            },
 
@@ -116,14 +121,14 @@
 	            },
 
 	            submitHandler: function (form) {
-	                window.location.href = "index.html";
+	                window.location.href = "Auth/index";
 	            }
 	        });
 
 	        $('.forget-form input').keypress(function (e) {
 	            if (e.which == 13) {
 	                if ($('.forget-form').validate().form()) {
-	                    window.location.href = "index.html";
+	                    window.location.href = "Auth/index";
 	                }
 	                return false;
 	            }
@@ -145,11 +150,12 @@
 	            focusInvalid: false, // do not focus the last invalid input
 	            ignore: "",
 	            rules: {
-	                email: {
+	                username: {
 	                    required: true
 	                },
 	                password: {
-	                    required: true
+	                    required: true,
+	                    minlength: 6
 	                },
 	                rpassword: {
 	                    equalTo: "#register_password"
@@ -157,16 +163,25 @@
 	                email: {
 	                    required: true,
 	                    email: true
-	                },
-	                tnc: {
-	                    required: true
 	                }
 	            },
 
 	            messages: { // custom messages for radio buttons and checkboxes
-	                tnc: {
-	                    required: "Please accept TNC first."
-	                }
+	                username: {
+	                    required: "請輸入使用者名稱"
+	                },
+	                password: {
+	                    required: "請輸入密碼(6~10碼)",
+	                    minlength: "最少輸入6碼"
+	                },
+	                rpassword: {
+	                    equalTo: "密碼不符"
+	                },
+	                email: {
+	                    required: "請輸入電子郵件帳號",
+	                    email: "請輸入正確電子郵件格式 (例如：EX@gmail.com)"
+	                },
+
 	            },
 
 	            invalidHandler: function (event, validator) { //display error alert on form submit   
@@ -192,7 +207,7 @@
 	            },
 
 	            submitHandler: function (form) {
-	                window.location.href = "index.html";
+	                window.location.href = "Auth/index";
 	            }
 	        });
 
