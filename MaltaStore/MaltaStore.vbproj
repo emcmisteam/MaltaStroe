@@ -160,10 +160,14 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\AuthController.vb" />
+    <Compile Include="Controllers\BaseController.vb" />
     <Compile Include="Controllers\DashboardController.vb" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.vb" />
+    <Compile Include="Filters\WebAuthorizeFilter.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AuthModels.vb" />
     <Compile Include="Models\CusDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -481,6 +485,8 @@
     <Content Include="Views\Auth\Login.vbhtml" />
     <Content Include="Views\Auth\Index.vbhtml" />
     <Content Include="Views\Dashboard\Index.vbhtml" />
+    <Content Include="Views\Auth\AuthAccount.vbhtml" />
+    <Content Include="Views\Dashboard\Details.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

@@ -35,7 +35,7 @@ End Code
    <!-- BEGIN LOGIN -->
    <div class="content">
 		<!-- BEGIN LOGIN FORM -->
-       <form class="form-vertical login-form" action="index.html">
+       <form class="form-vertical login-form" action="Auth/AuthAccount" method="post">
 			<h3 class="form-title">登入作業</h3>
 			<div class="alert alert-error hide">
 				<button class="close" data-dismiss="alert"></button>
@@ -157,7 +157,8 @@ End Code
 				<button type="submit" id="register-submit-btn" class="btn green pull-right">
 				Sign Up <i class="m-icon-swapright m-icon-white"></i>
 				</button>            
-			</div>
+			</div>
+
 		</form>
         <!-- END REGISTRATION FORM -->
 

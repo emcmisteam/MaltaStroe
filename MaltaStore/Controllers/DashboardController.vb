@@ -1,4 +1,5 @@
-﻿Public Class DashboardController
+﻿<WebAuthorizeFilter()>
+Public Class DashboardController
     Inherits System.Web.Mvc.Controller
 
     '

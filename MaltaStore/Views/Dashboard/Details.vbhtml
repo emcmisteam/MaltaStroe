@@ -7,11 +7,11 @@ End Code
 <html>
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Details</title>
 </head>
 <body>
     <div>
-        Dashboard
+        details
     </div>
 </body>
 </html>
