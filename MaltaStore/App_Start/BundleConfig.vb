@@ -16,13 +16,20 @@ Public Class BundleConfig
                     "~/Scripts/jquery.cookie_min.js",
                     "~/Scripts/jquery.uniform_min.js"))
 
-        ' PAGE LEVEL JS
+        ' PAGE LEVEL Login JS
         bundles.Add(New ScriptBundle("~/bundles/login").Include(
                    "~/Scripts/jquery.validate_min.js",
                    "~/Scripts/app.js",
                    "~/Scripts/login.js",
                    "~/Scripts/prefixfree.min.js",
                    "~/Scripts/modernizr.js"))
+
+        ' PAGE LEVEL page404 JS
+        bundles.Add(New ScriptBundle("~/bundles/page404Js").Include(
+                   "~/Scripts/jquery.countdown.js",
+                   "~/Scripts/jquery.backstretch.min.js",
+                   "~/Scripts/app.js",
+                   "~/Scripts/error404.js"))
 
         ' GLOBAL STYLE CSS
         bundles.Add(New StyleBundle("~/Content/css").Include(
@@ -39,6 +46,12 @@ Public Class BundleConfig
         bundles.Add(New StyleBundle("~/Content/loginCss").Include(
                     "~/Content/normalize.css",
                     "~/Content/login.css"))
+
+        ' PAGE LEVEL STYLE CSS
+        bundles.Add(New StyleBundle("~/Content/page404css").Include(
+                    "~/Content/bootstrap_min.css",
+                    "~/Content/bootstrap-responsive_min.css",
+                    "~/Content/error404.css"))
 
 
         'bundles.Add(New ScriptBundle("~/bundles/jquery").Include(

@@ -26,7 +26,7 @@ End Code
 <body class="login">
    <!-- BEGIN LOGO -->
    <div class="logo">
-	MLATE <span style="color:#f54b4b">STORE<span>
+	MLATE <span style="color:#f54b4b">STORE</span>
    </div>
    <!-- END LOGO -->
 

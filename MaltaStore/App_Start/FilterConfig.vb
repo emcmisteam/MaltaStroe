@@ -6,6 +6,11 @@ Public Class FilterConfig
 
         Debug.WriteLine(" ---[RegisterGlobalFilters]---")
 
+        'filters.Add(new HandleErrorAttribute( _
+        '  ExceptionType = typeof(System.Data.DataException),
+        '  View = "DatabaseError" _
+        '   )
+
         filters.Add(New HandleErrorAttribute())
         'filters.Add(New WebAuthorizeFilter())
 
