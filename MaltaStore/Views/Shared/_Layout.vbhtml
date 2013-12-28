@@ -223,13 +223,11 @@
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-                            <li><a href="#"><i class="icon-calendar"></i> My Calendar</a></li>
-                            <li><a href="#"><i class="icon-envelope"></i> My Inbox(3)</a></li>
-                            <li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
+                            <li><a href="#"><i class="icon-user"></i> 個人資料</a></li>
+                            <li><a href="#"><i class="icon-envelope"></i> 個人訊息(3)</a></li>
+                            <li><a href="#"><i class="icon-tasks"></i> 代辦事項</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
-                            <li><a href="~/Auth/Logout"><i class="icon-key"></i> Log Out</a></li>
+                            <li><a href="~/Auth/Logout"><i class="icon-signout"></i> 登出</a></li>
                         </ul>
                     </li>
                     <!-- END USER LOGIN DROPDOWN -->
@@ -274,7 +272,27 @@
 
                 <li class="">
                     <a href="javascript:;">
-                        <i class="icon-bookmark-empty"></i>
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">銷售統計</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                銷售資訊
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                產品資訊
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-shopping-cart"></i>
                         <span class="title">訂單管理</span>
                         <span class="arrow "></span>
                     </a>
@@ -294,8 +312,78 @@
 
                 <li class="">
                     <a href="javascript:;">
+                        <i class="icon-inbox"></i>
+                        <span class="title">商品管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                分類管理
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                品牌管理
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                產品銷售管理
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-credit-card"></i>
+                        <span class="title">付款方式設定</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                ATM轉帳/匯款
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                面交
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                線上刷卡
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-truck"></i>
+                        <span class="title">配送方式設定</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                郵寄送貨
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                超商取貨
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
                         <i class="icon-user"></i>
-                        <span class="title">帳號權限管理</span>
+                        <span class="title">後台帳號管理</span>
                         <span class="arrow "></span>
                     </a>
                     <ul class="sub-menu">
@@ -307,6 +395,26 @@
                         <li>
                             <a href="#">
                                 帳號管理
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-group"></i>
+                        <span class="title">顧客帳號管理</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">
+                                顧客帳號管理
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                消費分析
                             </a>
                         </li>
                     </ul>
