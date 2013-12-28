@@ -258,5 +258,53 @@ End Code
         </div>
         <!-- END SAMPLE TABLE PORTLET-->
     </div>
-
 </div>
+
+
+<div class="row-fluid">
+    <div class="span6">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet solid bordered light-grey">
+            <div class="portlet-title">
+                <div class="caption"><i class="icon-bar-chart"></i>登入次數 & 訂單數量分析圖 <small>(月統計)</small></div>
+                <div class="tools">
+                    <div class="btn-group pull-right" data-toggle="buttons-radio">
+                        <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入數</span>
+                        <span class="btn mini" style="color:#fff; background-color:rgba(100, 186, 248, 0.7)">訂單數</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <canvas id="loginAndOrderChart" height="450" width="600"></canvas>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        // 登入次數與訂單次數分析圖
+        var lineChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+				{
+				    fillColor: "rgba(220,220,220,0.5)",
+				    strokeColor: "rgba(220,220,220,1)",
+				    pointColor: "rgba(220,220,220,1)",
+				    pointStrokeColor: "#fff",
+				    data: [65, 59, 90, 81, 56, 55, 40]
+				},
+				{
+				    fillColor: "rgba(151,187,205,0.5)",
+				    strokeColor: "rgba(151,187,205,1)",
+				    pointColor: "rgba(151,187,205,1)",
+				    pointStrokeColor: "#fff",
+				    data: [28, 48, 40, 19, 66, 27, 95]
+				}
+            ]
+
+        }
+        var chart01 = new Chart(document.getElementById("loginAndOrderChart").getContext("2d")).Line(lineChartData);
+    });
+</script>

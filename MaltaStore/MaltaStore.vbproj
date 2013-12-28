@@ -493,6 +493,8 @@
     <Content Include="Scripts\bootstrap_min.js" />
     <Content Include="Scripts\breakpoints.js" />
     <Content Include="Scripts\canvas-to-blob.min.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart_min.js" />
     <Content Include="Scripts\date.js" />
     <Content Include="Scripts\daterangepicker.js" />
     <Content Include="Scripts\error404.js" />

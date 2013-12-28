@@ -49,6 +49,7 @@ Public Class BundleConfig
                    "~/Scripts/fullcalendar.min.js",
                    "~/Scripts/jquery.easy-pie-chart.js",
                    "~/Scripts/jquery.sparkline.min.js",
+                   "~/Scripts/Chart_min.js",
                    "~/Scripts/app.js",
                    "~/Scripts/index.js"))
 
