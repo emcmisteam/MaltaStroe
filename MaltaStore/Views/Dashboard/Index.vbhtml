@@ -194,7 +194,7 @@ End Code
                             </td>
                             <td>台北市</td>
                             <td>2013/12/31 10:59:37</td>
-                            <td>77 次</td>
+                            <td>7 次</td>
                             <td>0 筆, $ 0</td>
                         </tr>
                     </tbody>
@@ -375,7 +375,7 @@ End Code
         <!-- BEGIN PORTLET-->
         <div class="portlet solid bordered light-grey">
             <div class="portlet-title">
-                <div class="caption"><i class="icon-bar-chart"></i>熱門商品 <small>(日統計)</small></div>
+                <div class="caption"><i class="icon-bar-chart"></i>熱門瀏覽商品 <small>(日統計)</small></div>
                 <!--div class="tools">
                     <div class="btn-group pull-right" data-toggle="buttons-radio">
                         <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入次數</span>
@@ -384,7 +384,23 @@ End Code
                 </div -->
             </div>
             <div class="portlet-body">
-                <div id="topProductChart" style="height:450px; width:600px"></div>
+                <div id="topProductChart" style="height:180px; width:600px"></div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+        <!-- BEGIN PORTLET-->
+        <div class="portlet solid bordered light-grey">
+            <div class="portlet-title">
+                <div class="caption"><i class="icon-bar-chart"></i>熱門訂購商品 <small>(日統計)</small></div>
+                <!--div class="tools">
+                <div class="btn-group pull-right" data-toggle="buttons-radio">
+                    <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入次數</span>
+                    <span class="btn mini" style="color:#fff; background-color:rgba(100, 186, 248, 0.8)">訂單數量</span>
+                </div>
+            </div -->
+            </div>
+            <div class="portlet-body">
+                <div id="topSaleProductChart" style="height:180px; width:600px"></div>
             </div>
         </div>
         <!-- END PORTLET-->
@@ -393,4 +409,10 @@ End Code
 
 <script>
     var myPie = new Chartkick.PieChart("topProductChart", [["羽絨外套", 57], ["羊毛針織衫", 42], ["發熱內搭衣", 37], ["牛角排釦外套", 29]], { "library": { "backgroundColor": "#fafafa" } });
+    new Chartkick.BarChart("topSaleProductChart",
+        [["發熱內搭衣", 128],
+         ["口袋圓領衫", 67],
+         ["木釦開襟圓領衫", 59],
+         ["純色高領", 51],
+         ["特級鵝絨背心", 35]], { "library": { "backgroundColor": "#fafafa" } });
 </script>
