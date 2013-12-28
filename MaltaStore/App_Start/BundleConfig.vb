@@ -81,7 +81,8 @@ Public Class BundleConfig
                     "~/Content/daterangepicker.css",
                     "~/Content/fullcalendar.css",
                     "~/Content/jqvmap.css",
-                    "~/Content/jquery.easy-pie-chart.css"))
+                    "~/Content/jquery.easy-pie-chart.css",
+                    "~/Content/DT_bootstrap.css"))
 
 
         'bundles.Add(New ScriptBundle("~/bundles/jquery").Include(
