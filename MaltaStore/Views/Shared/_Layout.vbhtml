@@ -12,6 +12,7 @@
     <title>MaltaStore | Admin </title>
     <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+    <script src="http://www.google.com/jsapi"></script>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/dashboardCss")
     @Scripts.Render("~/bundles/core")
@@ -20,7 +21,7 @@
       <script src="~/Scripts/excanvas.min.js"></script>
       <script src="~/Scripts/respond.min.js"></script>
     <![endif]-->
-
+   
 </head>
 <body class="page-header-fixed">
 

@@ -50,6 +50,7 @@ Public Class BundleConfig
                    "~/Scripts/jquery.easy-pie-chart.js",
                    "~/Scripts/jquery.sparkline.min.js",
                    "~/Scripts/Chart_min.js",
+                   "~/Scripts/chartkick.js",
                    "~/Scripts/app.js",
                    "~/Scripts/index.js"))
 

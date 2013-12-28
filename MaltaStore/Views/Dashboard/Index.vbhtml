@@ -167,6 +167,36 @@ End Code
                             <td>79 次</td>
                             <td>6 筆, $ 8,490</td>
                         </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="success"></div>
+                                <a href="#">林曉東</a>
+                            </td>
+                            <td>高雄市</td>
+                            <td>2013/12/31 11:20:11</td>
+                            <td>44 次</td>
+                            <td>5 筆, $ 5,560</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="info"></div>
+                                <a href="#">Angel</a>
+                            </td>
+                            <td>新北市</td>
+                            <td>2013/12/31 11:11:33</td>
+                            <td>67 次</td>
+                            <td>9 筆, $ 12,311</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="important"></div>
+                                <a href="#">許文華</a>
+                            </td>
+                            <td>台北市</td>
+                            <td>2013/12/31 10:59:37</td>
+                            <td>77 次</td>
+                            <td>0 筆, $ 0</td>
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -238,12 +268,42 @@ End Code
                         <tr>
                             <td class="highlight">
                                 <div class="warning"></div>
-                                <a href="#">OD20131231-0319</a>
+                                <a href="#">OD20131231-0318</a>
                             </td>
                             <td>張怡秀 (新北市)</td>
                             <td>2013/12/31 11:45:58</td>
                             <td>2 項</td>
                             <td>$ 1,990</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="success"></div>
+                                <a href="#">OD20131231-0317</a>
+                            </td>
+                            <td>林志豪 (嘉義市)</td>
+                            <td>2013/12/31 10:41:18</td>
+                            <td>1 項</td>
+                            <td>$ 990</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="info"></div>
+                                <a href="#">OD20131231-0316</a>
+                            </td>
+                            <td>ViVi (台北市)</td>
+                            <td>2013/12/31 10:35:30</td>
+                            <td>2 項</td>
+                            <td>$ 2,590</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <div class="important"></div>
+                                <a href="#">OD20131231-0316</a>
+                            </td>
+                            <td>楊溢伶 (新竹市)</td>
+                            <td>2013/12/31 10:15:22</td>
+                            <td>1 項</td>
+                            <td>$ 1,190</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -269,8 +329,8 @@ End Code
                 <div class="caption"><i class="icon-bar-chart"></i>登入次數 & 訂單數量分析圖 <small>(月統計)</small></div>
                 <div class="tools">
                     <div class="btn-group pull-right" data-toggle="buttons-radio">
-                        <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入數</span>
-                        <span class="btn mini" style="color:#fff; background-color:rgba(100, 186, 248, 0.7)">訂單數</span>
+                        <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入次數</span>
+                        <span class="btn mini" style="color:#fff; background-color:rgba(100, 186, 248, 0.8)">訂單數量</span>
                     </div>
                 </div>
             </div>
@@ -280,7 +340,7 @@ End Code
         </div>
         <!-- END PORTLET-->
     </div>
-</div>
+
 <script>
     $(document).ready(function () {
 
@@ -307,4 +367,30 @@ End Code
         }
         var chart01 = new Chart(document.getElementById("loginAndOrderChart").getContext("2d")).Line(lineChartData);
     });
+</script>
+
+
+
+    <div class="span6">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet solid bordered light-grey">
+            <div class="portlet-title">
+                <div class="caption"><i class="icon-bar-chart"></i>熱門商品 <small>(日統計)</small></div>
+                <!--div class="tools">
+                    <div class="btn-group pull-right" data-toggle="buttons-radio">
+                        <span class="btn mini" style="color:#fff; background-color:rgba(147, 147, 147, 0.84)">登入次數</span>
+                        <span class="btn mini" style="color:#fff; background-color:rgba(100, 186, 248, 0.8)">訂單數量</span>
+                    </div>
+                </div -->
+            </div>
+            <div class="portlet-body">
+                <div id="topProductChart" style="height:450px; width:600px"></div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+    </div>
+</div>
+
+<script>
+    var myPie = new Chartkick.PieChart("topProductChart", [["羽絨外套", 57], ["羊毛針織衫", 42], ["發熱內搭衣", 37], ["牛角排釦外套", 29]], { "library": { "backgroundColor": "#fafafa" } });
 </script>
