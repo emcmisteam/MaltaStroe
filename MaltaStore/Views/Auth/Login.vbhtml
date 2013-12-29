@@ -157,7 +157,8 @@ End Code
 				<button type="submit" id="register-submit-btn" class="btn green pull-right">
 				Sign Up <i class="m-icon-swapright m-icon-white"></i>
 				</button>            
-			</div>
+			</div>
+
 		</form>
         <!-- END REGISTRATION FORM -->
 
