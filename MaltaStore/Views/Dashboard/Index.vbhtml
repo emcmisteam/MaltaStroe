@@ -1252,27 +1252,14 @@ End Code
                                             </div>
                                         </a>
                                     </li>
-
                                 </ul>
-
                             </div>
-
-                        </div>
-
-              
-
+                        </div>             
                     </div>
-
                 </div>
-
                 <!--END TABS-->
-
             </div>
-
         </div>
-
         <!-- END PORTLET-->
-
     </div>
-
 </div>
