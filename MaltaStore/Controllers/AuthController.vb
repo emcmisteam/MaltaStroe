@@ -16,6 +16,13 @@ Public Class AuthController
 
     Function Login() As ActionResult
         logConsole.LogToConsole(" [Auth/Login]")
+
+        If TempData("Error") IsNot Nothing Then
+            logConsole.LogToConsole(" -------- Error Msg:" + TempData("Error"))
+            ' [ViewData ] [ViewBag] [TempData] 請參考: http://www.dotblogs.com.tw/jasonyah/archive/2013/04/18/explain-viewbag-viewdata.aspx
+            ViewBag.Error = TempData("Error")
+        End If
+
         Return View()
     End Function
 
@@ -36,8 +43,11 @@ Public Class AuthController
             logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Email]>> " + Session("User").email.ToString + " <<")
             logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Password]>> " + Session("User").password.ToString + " <<")
             Return RedirectToAction("Index", "Dashboard")
+            'TempData("Error") = "驗證錯訊訊息"
+            'Return RedirectToAction("Login")
         Else
-            Return RedirectToAction("Index")
+            TempData("Error") = "server端驗證 - 錯訊訊息"
+            Return RedirectToAction("Login")
         End If
 
     End Function
