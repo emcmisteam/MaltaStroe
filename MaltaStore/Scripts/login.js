@@ -53,11 +53,7 @@
 
 	            
 	            submitHandler: function (form) {
-	                //alert(form);
-	                form.submit(function () {
-	                    //alert("Submitted");
-	                });
-	                //window.location.href = "Auth/index";
+	                window.location.href = "Auth/index";
                     /*
 	                var email = $('input[name="email"]').val(),
                          pass = $('input[name="password"]').val();

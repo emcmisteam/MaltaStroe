@@ -9,8 +9,6 @@ Public Class RouteConfig
     Public Shared Sub RegisterRoutes(ByVal routes As RouteCollection)
         routes.IgnoreRoute("{resource}.axd/{*pathInfo}")
 
-        Debug.WriteLine(" ---[RegisterRoutes]---")
-
         routes.MapRoute( _
             name:="Default", _
             url:="{controller}/{action}/{id}", _

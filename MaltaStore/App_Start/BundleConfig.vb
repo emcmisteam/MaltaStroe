@@ -16,44 +16,13 @@ Public Class BundleConfig
                     "~/Scripts/jquery.cookie_min.js",
                     "~/Scripts/jquery.uniform_min.js"))
 
-        ' PAGE LEVEL Login JS
+        ' PAGE LEVEL JS
         bundles.Add(New ScriptBundle("~/bundles/login").Include(
                    "~/Scripts/jquery.validate_min.js",
                    "~/Scripts/app.js",
                    "~/Scripts/login.js",
                    "~/Scripts/prefixfree.min.js",
                    "~/Scripts/modernizr.js"))
-
-        ' PAGE LEVEL page404 JS
-        bundles.Add(New ScriptBundle("~/bundles/page404Js").Include(
-                   "~/Scripts/jquery.countdown.js",
-                   "~/Scripts/jquery.backstretch.min.js",
-                   "~/Scripts/app.js",
-                   "~/Scripts/error404.js"))
-
-        ' PAGE LEVEL Dashboard JS
-        bundles.Add(New ScriptBundle("~/bundles/dashboardJs").Include(
-                   "~/Scripts/jquery.vmap.js",
-                   "~/Scripts/jquery.vmap.russia.js",
-                   "~/Scripts/jquery.vmap.world.js",
-                   "~/Scripts/jquery.vmap.europe.js",
-                   "~/Scripts/jquery.vmap.germany.js",
-                   "~/Scripts/jquery.vmap.usa.js",
-                   "~/Scripts/jquery.vmap.sampledata.js",
-                   "~/Scripts/jquery.flot.js",
-                   "~/Scripts/jquery.flot.resize.js",
-                   "~/Scripts/jquery.pulsate.min.js",
-                   "~/Scripts/date.js",
-                   "~/Scripts/daterangepicker.js",
-                   "~/Scripts/jquery.gritter.js",
-                   "~/Scripts/fullcalendar.min.js",
-                   "~/Scripts/jquery.easy-pie-chart.js",
-                   "~/Scripts/jquery.sparkline.min.js",
-                   "~/Scripts/Chart_min.js",
-                   "~/Scripts/chartkick.js",
-                   "~/Scripts/app.js",
-                   "~/Scripts/index.js"))
-
 
         ' GLOBAL STYLE CSS
         bundles.Add(New StyleBundle("~/Content/css").Include(
@@ -66,25 +35,10 @@ Public Class BundleConfig
                     "~/Content/default.css",
                     "~/Content/uniform.default.css"))
 
-        ' PAGE LEVEL Login STYLE CSS
+        ' PAGE LEVEL STYLE CSS
         bundles.Add(New StyleBundle("~/Content/loginCss").Include(
                     "~/Content/normalize.css",
                     "~/Content/login.css"))
-
-        ' PAGE LEVEL Page404 STYLE CSS
-        bundles.Add(New StyleBundle("~/Content/page404css").Include(
-                    "~/Content/bootstrap_min.css",
-                    "~/Content/bootstrap-responsive_min.css",
-                    "~/Content/error404.css"))
-
-        ' PAGE LEVEL Dashboard STYLE CSS
-        bundles.Add(New StyleBundle("~/Content/dashboardCss").Include(
-                    "~/Content/jquery.gritter.css",
-                    "~/Content/daterangepicker.css",
-                    "~/Content/fullcalendar.css",
-                    "~/Content/jqvmap.css",
-                    "~/Content/jquery.easy-pie-chart.css",
-                    "~/Content/DT_bootstrap.css"))
 
 
         'bundles.Add(New ScriptBundle("~/bundles/jquery").Include(

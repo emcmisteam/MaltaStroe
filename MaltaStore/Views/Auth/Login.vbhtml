@@ -26,7 +26,7 @@ End Code
 <body class="login">
    <!-- BEGIN LOGO -->
    <div class="logo">
-	MLATE <span style="color:#f54b4b">STORE</span>
+	MLATE <span style="color:#f54b4b">STORE<span>
    </div>
    <!-- END LOGO -->
 
@@ -35,7 +35,7 @@ End Code
    <!-- BEGIN LOGIN -->
    <div class="content">
 		<!-- BEGIN LOGIN FORM -->
-       <form class="form-vertical login-form" action="Auth/AuthAccount" method="post">
+       <form class="form-vertical login-form" action="index.html">
 			<h3 class="form-title">登入作業</h3>
 			<div class="alert alert-error hide">
 				<button class="close" data-dismiss="alert"></button>
