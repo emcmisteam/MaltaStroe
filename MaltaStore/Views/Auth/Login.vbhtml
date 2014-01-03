@@ -41,6 +41,11 @@ End Code
 				<button class="close" data-dismiss="alert"></button>
 				<span>請輸入電子郵件帳號和密碼</span>
 			</div>
+
+            @If (ViewBag.Error IsNot Nothing) Then
+                @<span style="color:#f54b4b">@ViewBag.Error</span>
+            End If
+           
 			<div class="control-group">
 				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
 				<label class="control-label visible-ie8 visible-ie9">Username</label>
