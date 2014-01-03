@@ -1,0 +1,87 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MaltaStore
+</name>
+</assembly>
+<members>
+<member name="M:MaltaStore.WebAuthorizeFilter.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+	<summary>
+ 在Action method之前執行
+ </summary>
+	<param name="filterContext"></param>
+	<remarks></remarks>
+</member><member name="M:MaltaStore.WebAuthorizeFilter.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+	<summary>
+ 在Action method之後執行
+ </summary>
+	<param name="filterContext"></param>
+	<remarks></remarks>
+</member><member name="M:MaltaStore.WebAuthorizeFilter.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+	<summary>
+ 在返回view之前執行
+ </summary>
+	<param name="filterContext"></param>
+	<remarks></remarks>
+</member><member name="M:MaltaStore.WebAuthorizeFilter.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+	<summary>
+ 在返回view之後執行
+ </summary>
+	<param name="filterContext"></param>
+	<remarks></remarks>
+</member><member name="T:MaltaStore.CusDataSet.CustomerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaltaStore.CusDataSet.CustomerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaltaStore.CusDataSet.CustomerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaltaStore.CusDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MaltaStore.CusDataSetTableAdapters.CustomerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(MaltaStore.CusDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(MaltaStore.CusDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(MaltaStore.CusDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.UpdateAll(MaltaStore.CusDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:MaltaStore.CusDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:MaltaStore.CusDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
