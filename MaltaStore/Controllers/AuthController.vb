@@ -31,6 +31,9 @@ Public Class AuthController
 
     <HttpPost()> _
     Function AuthAccount(account As AuthLoginAccountModel, ByVal from As FormCollection) As ActionResult
+
+
+
         logConsole.LogToConsole(" [Auth/AuthAccount]")
         logConsole.LogToConsole(" [email] " + from("email"))
         logConsole.LogToConsole(" [password] " + from("password"))
@@ -39,12 +42,19 @@ Public Class AuthController
         logConsole.LogToConsole(" [password] " + account.password + "---" + ModelState.IsValid.ToString)
 
         If account.email.Length > 0 And account.password.Length > 0 Then
-            Session("User") = account
-            logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Email]>> " + Session("User").email.ToString + " <<")
-            logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Password]>> " + Session("User").password.ToString + " <<")
-            Return RedirectToAction("Index", "Dashboard")
-            'TempData("Error") = "驗證錯訊訊息"
-            'Return RedirectToAction("Login")
+            Dim userAdp As New UserDataSetTableAdapters.Store_UserTableAdapter
+            If userAdp.CheckUserExist(account.email, account.password) > 0 Then
+                Session("User") = account
+                logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Email]>> " + Session("User").email.ToString + " <<")
+                logConsole.LogToConsole(" [Auth/AuthAccount][Set Session.User.Password]>> " + Session("User").password.ToString + " <<")
+                Return RedirectToAction("Index", "Dashboard")
+            Else
+                TempData("Error") = "帳號密碼錯誤!"
+                Return RedirectToAction("Login")
+            End If
+
+            
+            
         Else
             TempData("Error") = "server端驗證 - 錯訊訊息"
             Return RedirectToAction("Login")
