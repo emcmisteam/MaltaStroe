@@ -1,6 +1,6 @@
-﻿<WebAuthorizeFilter()>
+﻿
 Public Class DashboardController
-    Inherits System.Web.Mvc.Controller
+    Inherits BaseController
 
     '
     ' GET: /Dashboard
